@@ -46,6 +46,8 @@
                 <button onclick="switchTab('trafego')" id="nav-trafego" class="nav-btn text-slate-400 hover:text-orange-400 bg-transparent border border-transparent px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide transition flex items-center gap-2"><span>🚀 Tráfego Pago</span></button>
                 <div class="w-px h-4 bg-[#1a382a] mx-2"></div>
                 <button onclick="switchTab('presales')" id="nav-prevendas" class="nav-btn text-slate-400 hover:text-orange-400 bg-[#133325] border border-[#1a382a] px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide transition shadow-lg flex items-center gap-2"><span>📞 Pré-Vendas & MAPA</span></button>
+                <div class="w-px h-4 bg-[#1a382a] mx-2"></div>
+                <button onclick="switchTab('criativos')" id="nav-criativos" class="nav-btn text-slate-400 hover:text-orange-400 bg-transparent border border-transparent px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide transition flex items-center gap-2"><span>🎨 Criativos</span></button>
             </nav>
 
             <!-- Mobile Menu Toggle -->
@@ -54,6 +56,7 @@
                  <button onclick="switchTab('calendario')" class="bg-[#133325] text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase border border-[#1a382a] shrink-0">Agenda</button>
                  <button onclick="switchTab('trafego')" class="bg-[#133325] text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase border border-[#1a382a] shrink-0">Tráfego</button>
                  <button onclick="switchTab('presales')" class="bg-[#133325] text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase border border-[#1a382a] shrink-0">Vendas</button>
+                 <button onclick="switchTab('criativos')" class="bg-[#133325] text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase border border-[#1a382a] shrink-0">Criativos</button>
             </div>
         </div>
     </header>
@@ -506,6 +509,83 @@
             </section>
         </div>
 
+        <!-- ========================================== -->
+        <!-- TAB 5: CRIATIVOS E FERRAMENTAS             -->
+        <!-- ========================================== -->
+        <div id="tab-criativos" class="tab-content space-y-20">
+            <section class="text-center max-w-4xl mx-auto py-6">
+                <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter drop-shadow-lg leading-tight">Criativos & <span class="text-orange-500">Ferramentas</span></h2>
+                <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">Referências visuais, método de aplicação e exemplos reais de alta conversão para o seu feirão.</p>
+            </section>
+
+            <!-- O Método -->
+            <section class="max-w-5xl mx-auto -mt-10">
+                <div class="bg-[#0a1812] border border-[#1a382a] rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden flex flex-col items-center">
+                    <div class="absolute -top-24 -left-24 w-64 h-64 bg-orange-600/10 blur-[80px] rounded-full pointer-events-none"></div>
+                    <h3 class="text-3xl font-black text-white uppercase italic tracking-wider mb-8 text-center relative z-10">O Método <span class="text-orange-500">G30</span></h3>
+                    
+                    <div class="relative z-10 w-full max-w-3xl bg-black rounded-2xl border border-orange-500/20 shadow-[0_0_30px_rgba(0,0,0,0.5)] overflow-hidden aspect-video flex items-center justify-center">
+                        
+                        <!-- Se preferir usar o arquivo de imagem real localmente, remova este bloco interativo e descomente a linha abaixo: -->
+                        <!-- <img src="image_3e0412.jpg" alt="Método Feirão" class="w-full h-auto rounded-xl object-contain"> -->
+                        
+                        <!-- Representação visual do Método G30 (Funciona nativamente sem precisar de arquivo de imagem) -->
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-30 mix-blend-luminosity"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-80"></div>
+                        
+                        <!-- Crosshairs -->
+                        <div class="absolute top-1/4 bottom-1/4 left-1/2 w-px bg-white/40 -translate-x-1/2"></div>
+                        <div class="absolute left-[20%] right-[20%] top-1/2 h-px bg-white/40 -translate-y-1/2"></div>
+
+                        <!-- Center Circle and Text -->
+                        <div class="relative z-20 flex flex-col items-center justify-center w-full h-full text-center">
+                            <!-- TOP -->
+                            <div class="absolute top-[10%] text-orange-400 font-black text-lg md:text-2xl tracking-widest uppercase" style="text-shadow: 0 4px 10px rgba(0,0,0,0.8);">Meta</div>
+                            <!-- RIGHT -->
+                            <div class="absolute right-[5%] md:right-[10%] top-1/2 -translate-y-1/2 text-orange-400 font-black text-lg md:text-2xl tracking-widest uppercase" style="text-shadow: 0 4px 10px rgba(0,0,0,0.8);">Plano</div>
+                            <!-- BOTTOM -->
+                            <div class="absolute bottom-[10%] text-orange-400 font-black text-lg md:text-2xl tracking-widest uppercase" style="text-shadow: 0 4px 10px rgba(0,0,0,0.8);">Implementação</div>
+                            <!-- LEFT -->
+                            <div class="absolute left-[5%] md:left-[10%] top-1/2 -translate-y-1/2 text-orange-400 font-black text-lg md:text-2xl tracking-widest uppercase" style="text-shadow: 0 4px 10px rgba(0,0,0,0.8);">Controle</div>
+                            
+                            <!-- CENTER -->
+                            <div class="relative flex items-center justify-center">
+                                <!-- SVG Circle -->
+                                <svg class="absolute w-[220px] h-[100px] md:w-[300px] md:h-[130px] text-orange-500 -rotate-3" fill="none" viewBox="0 0 200 100" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M30,50 C30,20 170,15 170,50 C170,85 30,80 50,55" />
+                                </svg>
+                                <h1 class="text-4xl md:text-6xl font-black text-orange-500 tracking-tighter uppercase drop-shadow-2xl">Feirão</h1>
+                            </div>
+                        </div>
+                        
+                        <!-- Decoration corners -->
+                        <div class="absolute top-8 left-8 w-12 h-12 border-t-2 border-l-2 border-white/40"></div>
+                        <div class="absolute bottom-8 right-8 w-12 h-12 border-b-2 border-r-2 border-white/40"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exemplos de Instagram -->
+            <section class="max-w-6xl mx-auto space-y-8 pb-12 mt-12">
+                <div class="border-b border-[#1a382a] pb-4 mb-8 text-center">
+                    <h3 class="text-3xl font-black text-white uppercase italic tracking-widest">Exemplos <span class="text-orange-500">Validados</span></h3>
+                    <p class="text-slate-400 mt-2 text-lg">Modelos de reels que geram engajamento, retenção e leads. <br><span class="text-xs text-orange-400 font-bold">(O Instagram pode demorar alguns segundos para carregar)</span></p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center relative z-10">
+                    <!-- Reel 1 -->
+                    <div class="w-full max-w-sm bg-white rounded-xl shadow-2xl overflow-hidden flex justify-center border-4 border-[#050b08]">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-oSF83tT7i/" data-instgrm-version="14" style=" background:#FFF; border:0; margin:0; padding:0; width:100%; min-width: 320px;"></blockquote>
+                    </div>
+                    
+                    <!-- Reel 2 -->
+                    <div class="w-full max-w-sm bg-white rounded-xl shadow-2xl overflow-hidden flex justify-center border-4 border-[#050b08]">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DAQxAcJpRVC/" data-instgrm-version="14" style=" background:#FFF; border:0; margin:0; padding:0; width:100%; min-width: 320px;"></blockquote>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <!-- Teleprompter Modal -->
@@ -586,6 +666,7 @@
             document.getElementById('nav-calendario').className = borderedClass;
             document.getElementById('nav-trafego').className = borderedClass;
             document.getElementById('nav-prevendas').className = filledClass;
+            if (document.getElementById('nav-criativos')) document.getElementById('nav-criativos').className = borderedClass;
 
             // Activate chosen tab
             if (tabId === 'main') {
@@ -611,16 +692,23 @@
                 document.getElementById('nav-prevendas').classList.replace('text-slate-400', 'text-orange-500');
                 document.getElementById('nav-prevendas').classList.replace('border-[#1a382a]', 'border-orange-500');
             }
+            else if (tabId === 'criativos') {
+                document.getElementById('tab-criativos').style.display = 'block';
+                setTimeout(() => document.getElementById('tab-criativos').classList.add('active'), 50);
+                document.getElementById('nav-criativos').classList.replace('text-slate-400', 'text-orange-500');
+                document.getElementById('nav-criativos').classList.add('border-orange-500');
+            }
 
             // Mobile Buttons Reset
             const mobileBtns = document.querySelectorAll('.xl\\:hidden button');
             mobileBtns.forEach(btn => {
                 btn.className = "bg-[#133325] text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase border border-[#1a382a] shrink-0";
             });
-            if(tabId === 'main') mobileBtns[0].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
-            if(tabId === 'calendario') mobileBtns[1].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
-            if(tabId === 'trafego') mobileBtns[2].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
-            if(tabId === 'presales') mobileBtns[3].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
+            if(tabId === 'main' && mobileBtns[0]) mobileBtns[0].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
+            if(tabId === 'calendario' && mobileBtns[1]) mobileBtns[1].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
+            if(tabId === 'trafego' && mobileBtns[2]) mobileBtns[2].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
+            if(tabId === 'presales' && mobileBtns[3]) mobileBtns[3].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
+            if(tabId === 'criativos' && mobileBtns[4]) mobileBtns[4].className = "bg-orange-600 text-white px-3 py-2 rounded-md text-[10px] font-bold uppercase shrink-0";
         }
 
         // --- RENDER SCRIPTS (O FEIRÃO) ---
@@ -777,11 +865,11 @@
             document.body.appendChild(textarea);
             textarea.select();
             
+            const btnTextSpan = isLargeBtn ? btn.querySelector('.btn-text') : btn.querySelector('span');
+            const originalText = btnTextSpan.innerText;
+            
             try {
                 document.execCommand('copy');
-                
-                const btnTextSpan = isLargeBtn ? btn.querySelector('.btn-text') : btn.querySelector('span');
-                const originalText = btnTextSpan.innerText;
                 
                 btnTextSpan.innerText = 'Copiado! ✅';
                 
@@ -807,7 +895,8 @@
                 }, 2000);
             } catch (err) {
                 console.error('Falha ao copiar:', err);
-                alert('Pode copiar manualmente o texto.');
+                btnTextSpan.innerText = 'Erro ao copiar ❌';
+                setTimeout(() => btnTextSpan.innerText = originalText, 2000);
             } finally {
                 document.body.removeChild(textarea);
             }
@@ -827,5 +916,6 @@
             }
         });
     </script>
+    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
